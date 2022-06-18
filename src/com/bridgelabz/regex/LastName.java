@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class FirstName {
+public class LastName {
     public static void main(String[] args) {
 
         String namePattern = "^[A-Z]{1}[a-z]{3,9}$";
@@ -16,9 +16,9 @@ public class FirstName {
         Matcher firstNameMatcher = regex.matcher(inputStr);
         sc.close();
         if (firstNameMatcher.matches()) {
-            System.out.println(inputStr + " is valid First name.");
+            System.out.println(inputStr + " is valid Last Name.");
         } else {
-            System.out.println(inputStr + " is invalid First name. Please input the right one.");
+            System.out.println(inputStr + " is invalid Last Name. Please input the right one.");
         }
     }
 }
